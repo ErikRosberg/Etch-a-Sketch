@@ -1,0 +1,51 @@
+html body {
+    height: 100%;
+}
+
+body {
+margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    border: 3px solid green;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid blue;
+    height: 40rem;
+    width: 18em;
+}
+
+#drawingArea {
+    padding: 0%;
+    gap: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 3px solid red;
+    height: 40rem;
+    width: 40rem;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 18px;
+    background-color: whitesmoke;
+    border-top: 3px solid darkgoldenrod;
+}
