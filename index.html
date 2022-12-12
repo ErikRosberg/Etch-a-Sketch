@@ -20,10 +20,10 @@
       </div>
       <div class="container" id="drawingGrid"> </div>
       <div class="container" id="settings">
-        <button type="submit" lable="button" id="black"> Black</button>
-        <button type="submit" lable="button" id="erasor"> Erasor</button>
+        <button type="submit" lable="button" id="black" onclick="changeColor('black')"> Black </button>
+        <button type="submit" lable="button" id="erasor" onclick="changeColor('white')"> Erasor </button>
         <button type="submit" lable="button" id="color"> Color </button>
-        <button type="submit" lable="button" id="random"> Random</button>
+        <button type="submit" lable="button" id="random" onclick="changeColor('random')"> Random</button>
         <button type="submit" lable="button" id="reset" onclick="createGrid(16, 'black')"> Reset</button>
       </div>
 
