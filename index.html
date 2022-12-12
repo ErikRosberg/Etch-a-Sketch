@@ -9,10 +9,24 @@
   <body>
     <div class="wrapper">
       <h1> Welcome to Etch-a-Sketch</h1>
+      <div>
+        <input 
+          type="text" 
+          placeholder="pick the grid size" 
+          value="16" 
+          onchange="changeGridSize(this.value, 'black')" 
+          />
+        <button> Set Size</button>
+      </div>
+      <div class="container" id="drawingGrid"> </div>
       <div class="container" id="settings">
+        <button type="submit" lable="button" id="black"> Black</button>
+        <button type="submit" lable="button" id="erasor"> Erasor</button>
+        <button type="submit" lable="button" id="color"> Color </button>
+        <button type="submit" lable="button" id="random"> Random</button>
+        <button type="submit" lable="button" id="reset" onclick="createGrid(16, 'black')"> Reset</button>
       </div>
-      <div class="container" id="drawingGrid">
-      </div>
+
     </div>
   </body>
 </html>

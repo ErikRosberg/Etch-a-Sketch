@@ -1,16 +1,24 @@
-const printArea = document.getElementById("drawingGrid")
+let printArea = document.getElementById("drawingGrid")
 
+function createGrid(size, color) {
+    let squares = printArea.querySelectorAll('div');
+    squares.forEach(div=> div.remove());
 
-function createGrid(rows, cols) {
-    printArea.style.setProperty('--grid-rows', rows);
-    printArea.style.setProperty('--grid-cols', cols);  
+    printArea.style.setProperty('--grid-rows', size);
+    printArea.style.setProperty('--grid-cols', size);  
 
-    for(i = 0; i < (rows*cols); i++) {
+    for(i = 0; i < (size*size); i++) {
         let cell = document.createElement('div')
+        cell.style.setProperty('--drawing-color', color)
         printArea.appendChild(cell).className = "grid-item";
-
     }
 }
 
-document.onload = createGrid(16, 16);
+
+function changeGridSize(sizeInput, colorInput) {
+
+    createGrid(sizeInput, colorInput)
+}
+
+document.onload = createGrid( 16, "black");
 
