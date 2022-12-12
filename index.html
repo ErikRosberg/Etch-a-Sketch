@@ -3,24 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <title>Etch-a-Sketch</title>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrapper">
-      <h1>Etch-a-Sketch</h1>
-      <div class="flex-container">
-        <div class="flex-column">
-            <div id="hexPicker"> Color picker wheel</div>
-            <button id="colorPicker" onclick="changeColor(pickedHex)"> Change Color</button>
-            <button id="brushPicker" onclick="changebrushSize(pickedBrushSize)">Change Brush Size</button>
-            <button id="clear" onclick="clearDrawingBoard()"> Clear </button>
-        </div>
-        <div id="drawingArea"> </div>
+      <h1> Welcome to Etch-a-Sketch</h1>
+      <div class="container" id="settings">
       </div>
-      <footer> 
-        <p> By Erik Rosberg </p>
-    </footer>
+      <div class="container" id="drawingGrid">
+      </div>
     </div>
   </body>
 </html>
